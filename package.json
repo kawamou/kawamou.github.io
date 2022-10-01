@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lin -dir src"
+    "lint": "next lin -dir src",
+    "serve": "npx serve out"
   },
   "dependencies": {
     "next": "12.3.1",
