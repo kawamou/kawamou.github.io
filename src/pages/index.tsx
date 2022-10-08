@@ -26,16 +26,17 @@ const Header = () => {
     </div>
   )
 }
-const AboutMe = () => {
+
+const Top = () => {
   return (
-    <div className='about-me max-w-2xl m-auto'>
+    <div className='max-w-2xl m-auto'>
       <div className='flex justify-center'>
-        <div className='w-30 mt-auto mb-auto'>
+        <div className='w-30 m-auto'>
           <img src='/qr.png' className='w-full' />
         </div>
         <div className='mt-auto mb-auto'>
-          <div className='text-5xl'>Hello👋</div>
-          <div>
+          <div className='text-5xl font-semibold mb-2'>Hello👋</div>
+          <div className='mb-4'>
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
             <br />
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
