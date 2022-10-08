@@ -2,6 +2,18 @@ import type { NextPage } from 'next'
 import { useState, useCallback } from 'react'
 import { BriefcaseIcon } from '@heroicons/react/outline'
 
+const SideNav = () => {
+  return (
+    <div>
+      <p>About me</p>
+      <p>About me</p>
+      <p>About me</p>
+      <p>About me</p>
+      <p>About me</p>
+    </div>
+  )
+}
+
 const Header = () => {
   return (
     <div className='navbar h-20'>
