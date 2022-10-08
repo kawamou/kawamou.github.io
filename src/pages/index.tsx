@@ -51,6 +51,36 @@ const AboutMe = () => {
   )
 }
 
+const AboutMe = () => {
+  return (
+    <div className='max-w-3xl m-auto'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>About me</h2>
+      <div className='mb-4'>
+        <p>
+          私はこんな職業です。こんなことが好きです。
+          それからこんな経験をしてきました。こんなことができます
+          段落作って右側に作ることが好きですとかそういう感じのパーソナルなこと書いても良いかも
+          https://employment.en-japan.com/tenshoku-daijiten/42593/
+        </p>
+      </div>
+      <div className='flex text-center'>
+        <p className='w-1/4'>GitHub</p>
+        <p className='w-1/4'>Qiita</p>
+        <p className='w-1/4'>Instagram</p>
+        <p className='w-1/4'>Twitter</p>
+      </div>
+    </div>
+  )
+}
+
+const Skills = () => {
+  return (
+    <div className='max-w-3xl m-auto'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>Skills</h2>
+    </div>
+  )
+}
+
 type Experience = {
   title: string
   date: string
