@@ -94,47 +94,54 @@ type Experience = {
 const Experiences = () => {
   const [experiences] = useState<Experience[]>([
     {
-      title: 'ここにタイトルが入る',
+      title: '大手通信会社事業化',
       date: '2022.01.01',
       description:
         'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
     },
     {
-      title: 'ここにタイトルが入る',
+      title: '大手通信会社初期配属',
       date: '2022.01.01',
       description:
         'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
     },
     {
-      title: 'ここにタイトルが入る',
-      date: '2022.01.01',
+      title: '筑波大学大学院',
+      date: '2016.04 - 2018.03',
       description:
         'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
     },
+    {
+      title: '筑波大学',
+      date: '2012.04 - 2016.03',
+      description:
+        '情報学群情報科学類にてコンピュータサイエンスについて学びました。大学外の活動としては...',
+    },
   ])
   return (
-    <div className='max-w-3xl ml-auto mr-auto'>
+    <div className='max-w-3xl m-auto'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>Experience</h2>
       <ol className='relative border-l border-gray-200'>
         {experiences?.map((experience, index) => {
           return (
             <>
-              <span className='flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
-                <BriefcaseIcon></BriefcaseIcon>
+              <span className='flex absolute -left-3 justify-center items-center w-6 h-6 bg-gray-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-gray-900'>
+                <BriefcaseIcon className='text-gray-800 w-4'></BriefcaseIcon>
               </span>
-              <h3 className='flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
+              <h3 className='flex items-center ml-5 mb-1 text-lg font-semibold text-gray-900 dark:text-white'>
                 {experience.title}
                 {index > 0 ? (
                   <></>
                 ) : (
-                  <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3'>
+                  <span className='bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-800 ml-3'>
                     Latest
                   </span>
                 )}
               </h3>
-              <time className='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
+              <time className='block mb-2 ml-5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
                 {experience.date}
               </time>
-              <p className='mb-4 text-base font-normal text-gray-500 dark:text-gray-400'>
+              <p className='mb-4 ml-5 text-base font-normal text-gray-500 dark:text-gray-400'>
                 {experience.description}
               </p>
             </>
