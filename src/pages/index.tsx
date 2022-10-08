@@ -151,8 +151,55 @@ const Experiences = () => {
     </div>
   )
 }
+
+const Appendix = () => {
+  return (
+    <div className='max-w-3xl m-auto'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>Appendix</h2>
+      ここに保有資格、受賞、登壇歴、インターン等を書くか
+    </div>
+  )
+}
+
+const Contact = () => {
+  return (
+    <div className='max-w-3xl m-auto'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>Contact</h2>
+      <p className='text-center'>xxx@xxx.xxx</p>
+    </div>
+  )
+}
+
+// 余白は誰の持ち物？
+// https://zenn.dev/seya/articles/09545c7503baa4
+const Spacer = () => {
+  return <div className='mb-16'></div>
+}
+
+// 必要な事項
+// - 保有資格、受賞登壇歴、経験（電通インターンとかも書いて良いと思う）
+// - 別ページにポートフォリオがあると良いかもしれない
 const Home: NextPage = () => {
-  return <>top page</>
+  return (
+    <div className='max-w-5xl m-auto'>
+      <div className='main'>
+        <Header />
+        <Spacer />
+        <Top />
+        <Spacer />
+        <AboutMe />
+        <Spacer />
+        <Skills />
+        <Spacer />
+        <Experiences />
+        <Spacer />
+        <Appendix />
+        <Spacer />
+        <Contact />
+      </div>
+      {/* <SideNav /> */}
+    </div>
+  )
 }
 
 export default Home
