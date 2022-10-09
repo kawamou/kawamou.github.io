@@ -47,10 +47,10 @@ const Top = () => {
             gonyogonyogonyogonyogonyogonyogonyogonyo
           </div>
           <div className='flex gap-2'>
-            <button className='bg-gray-500 hover:bg-gray-700 text-white py-2 px-5 rounded-full'>
+            <button className='bg-gray-500 hover:bg-gray-700 text-white py-1 w-24 rounded-3xl'>
               foo-bar
             </button>
-            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500 py-1 px-4 rounded-full'>
+            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500  w-24 rounded-3xl'>
               foo-bar
             </button>
           </div>
@@ -64,13 +64,12 @@ const AboutMe = () => {
   return (
     <div className='max-w-3xl m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>About me</h2>
-      <div className='mb-4'>
-        <p>
-          私はこんな職業です。こんなことが好きです。
-          それからこんな経験をしてきました。こんなことができます
-          段落作って右側に作ることが好きですとかそういう感じのパーソナルなこと書いても良いかも
-          https://employment.en-japan.com/tenshoku-daijiten/42593/
-        </p>
+      <div className='mb-8 text-center'>
+        私はこんな職業です。こんなことが好きです。
+        それからこんな経験をしてきました。こんなことができます
+        段落作って右側に作ることが好きですとかそういう感じのパーソナルなこと書いても良いかも
+        それからこんなこととか、あんなこととか、これからのこと たのしいこと、うれしいこと
+        こちら側に自己紹介系のことを書くイメージか。エンジニアです、とか
       </div>
       <div className='flex text-center max-w-xs ml-auto mr-auto'>
         <div className='text-gray-800 w-1/4'>
