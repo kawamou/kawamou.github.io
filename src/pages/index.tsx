@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import { useState, useCallback } from 'react'
 import { BriefcaseIcon } from '@heroicons/react/outline'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const SideNav = () => {
   return (
@@ -64,11 +66,20 @@ const AboutMe = () => {
           https://employment.en-japan.com/tenshoku-daijiten/42593/
         </p>
       </div>
-      <div className='flex text-center'>
-        <p className='w-1/4'>GitHub</p>
-        <p className='w-1/4'>Qiita</p>
-        <p className='w-1/4'>Instagram</p>
-        <p className='w-1/4'>Twitter</p>
+      <div className='flex text-center max-w-xs ml-auto mr-auto'>
+        <div className='text-gray-800 w-1/4'>
+          <FontAwesomeIcon icon={faTwitter} className={'h-5'} />
+        </div>
+        <div className='text-gray-800 w-1/4'>
+          <FontAwesomeIcon icon={faGithub} className={'h-5'} />
+        </div>
+        <div className='text-gray-800 w-1/4'>
+          <FontAwesomeIcon icon={faInstagram} className={'h-5'} />
+        </div>
+        <div className='text-gray-800 w-1/4'>
+          <FontAwesomeIcon icon={faLinkedin} className={'h-5'} />
+        </div>
+        {/* ここにQiitaを足す */}
       </div>
     </div>
   )
