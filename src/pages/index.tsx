@@ -131,6 +131,7 @@ type Experience = {
 // My Resumeの部分を埋める
 // https://flowbite.com/docs/components/timeline/
 // これが良さそう
+// all, 会社, 学問, その他で絞れると良さそう。ボタンがあって
 const Experiences = () => {
   const [experiences] = useState<Experience[]>([
     {
