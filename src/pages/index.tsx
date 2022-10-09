@@ -37,17 +37,23 @@ const Top = () => {
           <img src='/qr.png' className='w-full' />
         </div>
         <div className='mt-auto mb-auto'>
-          <div className='text-5xl font-semibold mb-2'>Hello👋</div>
-          <div className='mb-4'>
+          <h4 className='font-semibold'>Hi👋 I am</h4>
+          <h1 className='text-5xl font-semibold mb-2'>kawamou</h1>
+          <div className='mb-4 text-gray-500'>
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
             <br />
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
             <br />
             gonyogonyogonyogonyogonyogonyogonyogonyo
           </div>
-          <button className='bg-gray-500 hover:bg-gray-700 text-white py-1 px-4 rounded'>
-            PORTFOLIO
-          </button>
+          <div className='flex gap-2'>
+            <button className='bg-gray-500 hover:bg-gray-700 text-white py-2 px-5 rounded-full'>
+              foo-bar
+            </button>
+            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500 py-1 px-4 rounded-full'>
+              foo-bar
+            </button>
+          </div>
         </div>
       </div>
     </div>
