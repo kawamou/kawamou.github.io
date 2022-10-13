@@ -6,13 +6,15 @@ import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-
 
 const SideNav = () => {
   return (
-    <div>
-      <p>About me</p>
-      <p>About me</p>
-      <p>About me</p>
-      <p>About me</p>
-      <p>About me</p>
-    </div>
+    <aside>
+      <div>kawamou</div>
+      <p>HOME</p>
+      <p>ABOUT</p>
+      <p>SKILLS</p>
+      <p>EXPERIENCES</p>
+      <p>APPENDIX</p>
+      <p>CONTACT</p>
+    </aside>
   )
 }
 
