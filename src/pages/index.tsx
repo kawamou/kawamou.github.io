@@ -46,11 +46,11 @@ const Top = () => {
             gonyogonyogonyogonyogonyogonyogonyogonyo
           </div>
           <div className='flex gap-2'>
-            <button className='bg-gray-500 hover:bg-gray-700 text-white py-1 w-24 rounded-3xl'>
-              foo-bar
+            <button className='bg-gray-500 hover:bg-gray-700 text-white py-2 pr-4 pl-4 rounded-3xl'>
+              Contact me
             </button>
-            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500  w-24 rounded-3xl'>
-              foo-bar
+            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500  pr-4 pl-4 rounded-3xl'>
+              Works
             </button>
           </div>
         </div>
