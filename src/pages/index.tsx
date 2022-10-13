@@ -216,7 +216,7 @@ const Appendix = () => {
 
 const Contact = () => {
   return (
-    <div className='max-w-3xl m-auto'>
+    <div className='max-w-3xl m-auto  p-4'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Contact</h2>
       <p className='text-center'>xxx@xxx.xxx</p>
     </div>
@@ -234,23 +234,27 @@ const Spacer = () => {
 // - 別ページにポートフォリオがあると良いかもしれない
 const Home: NextPage = () => {
   return (
-    <div className='max-w-5xl m-auto'>
-      <div className='main'>
-        <Header />
-        <Spacer />
-        <Top />
-        <Spacer />
-        <AboutMe />
-        <Spacer />
-        <Skills />
-        <Spacer />
-        <Experiences />
-        <Spacer />
-        <Appendix />
-        <Spacer />
-        <Contact />
+    <div className='flex'>
+      <div className='w-1/5'>
+        <SideNav />
       </div>
-      {/* <SideNav /> */}
+      <div className='max-w-5xl m-auto w-4/5'>
+        <div className='main'>
+          {/* <Header /> */}
+          <Spacer />
+          <Top />
+          <Spacer />
+          <AboutMe />
+          <Spacer />
+          <Skills />
+          <Spacer />
+          <Experiences />
+          <Spacer />
+          <Appendix />
+          <Spacer />
+          <Contact />
+        </div>
+      </div>
     </div>
   )
 }
