@@ -139,33 +139,41 @@ type Experience = {
 const Experiences = () => {
   const [experiences] = useState<Experience[]>([
     {
-      title: '大手通信会社事業化',
-      date: '2022.01.01',
+      title: '株式会社NTTドコモ',
+      date: '2018.04 - 現在 | Software Engineer, 新規事業創出',
       description:
         'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
     },
     {
-      title: '大手通信会社初期配属',
-      date: '2022.01.01',
+      title: '筑波大学大学院',
+      date: '2016.04 - 2018.03 | コンピュータサイエンス専攻',
       description:
-        'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
+        'システム情報工学研究科コンピュータサイエンス専攻に所属。主なテーマはCuckoo Searchによる連続値最適化で、ニューラルネットワークを対象としたNeuroEvolutionやブラックボックス最適化をメインに研究。',
     },
     {
-      title: '筑波大学大学院',
-      date: '2016.04 - 2018.03',
-      description:
-        'ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。',
+      title: 'インターンシップ 株式会社電通',
+      date: '2012.04 - 2016.03 | テクノロジーとアイデアの学校',
+      description: '',
+    },
+    {
+      title: 'アルバイト WWD JAPAN',
+      date: '2017 - 2018 | アルバイト',
+      description: '',
+    },
+    {
+      title: 'アルバイト 株式会社テレビ朝日',
+      date: '2012 - 2018 | アルバイト',
+      description: '',
     },
     {
       title: '筑波大学',
-      date: '2012.04 - 2016.03',
-      description:
-        '情報学群情報科学類にてコンピュータサイエンスについて学びました。大学外の活動としては...',
+      date: '2012.04 - 2016.03 | 情報学群情報科学類',
+      description: '情報学群情報科学類に所属。',
     },
   ])
   return (
-    <div className='max-w-3xl m-auto'>
-      <h2 className='text-3xl font-semibold text-center mb-8'>Experience</h2>
+    <div className='max-w-3xl m-auto p-4'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>Experiences</h2>
       <ol className='relative border-l border-gray-200'>
         {experiences?.map((experience, index) => {
           return (
