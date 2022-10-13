@@ -91,28 +91,33 @@ const AboutMe = () => {
 
 const Skills = () => {
   return (
-    <div className='max-w-3xl m-auto'>
+    <div className='max-w-3xl ml-auto mr-auto p-4'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Skills</h2>
-      <div className='flex gap-4'>
+      <div className='flex'>
         <div className='w-1/2'>
-          <h2 className='font-semibold text-gray-500 mb-4'>👨‍💻実業務で使っている</h2>
+          <h2 className='font-semibold text-gray-500 mb-4'>実業務</h2>
           <div className='flex gap-2 flex-wrap'>
-            <div className='bg-gray-800 py-1 text-white w-24 text-center'>#Go</div>
-            <div className='bg-gray-800 py-1 text-white w-32 text-center'>#Google Cloud</div>
-            <div className='bg-gray-800 py-1 text-white w-32 text-center'>#Firebase</div>
-            <div className='bg-gray-800 py-1 text-white w-20 text-center'>#SQL</div>
-            <div className='bg-gray-800 py-1 text-white w-32 text-center'>#コンテナ</div>
-            <div className='bg-gray-800 py-1 text-white w-32 text-center'>#Docker</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Go</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Google Cloud</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Firebase</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#k8s</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Container</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Docker</div>
           </div>
         </div>
         <div className='w-1/2'>
-          <h2 className='font-semibold text-gray-500 mb-4'>👶主にプライベートで利用</h2>
+          <h2 className='font-semibold text-gray-500 mb-4'>プライベート</h2>
           <div className='flex gap-2 flex-wrap'>
-            <div className='bg-gray-800 py-1 text-white w-32 text-center'>#TypeScript</div>
-            <div className='bg-gray-800 py-1 text-white w-24 text-center'>#React</div>
-            <div className='bg-gray-800 py-1 text-white w-20 text-center'>#AWS</div>
-            <div className='bg-gray-800 py-1 text-white w-24 text-center'>#Python</div>
-            <div className='bg-gray-800 py-1 text-white w-24 text-center'>#Flutter</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#TypeScript</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#React</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Node</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#AWS</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#SQL</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Python</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Flutter</div>
+            <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>
+              #Adobe (Photoshop, Illustrator...)
+            </div>
           </div>
         </div>
       </div>
