@@ -61,8 +61,8 @@ const Top = () => {
 
 const AboutMe = () => {
   return (
-    <div className='max-w-3xl m-auto'>
-      <h2 className='text-3xl font-semibold text-center mb-8'>About me</h2>
+    <div className='max-w-3xl m-auto  p-4'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>About</h2>
       <div className='mb-8 text-center'>
         私はこんな職業です。こんなことが好きです。
         それからこんな経験をしてきました。こんなことができます
