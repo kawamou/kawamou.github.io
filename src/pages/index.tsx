@@ -30,15 +30,15 @@ const Header = () => {
 
 const Top = () => {
   return (
-    <div className='max-w-2xl m-auto'>
+    <div className='max-w-3xl m-auto p-4'>
       <div className='flex justify-center'>
         <div className='w-30 m-auto'>
           <img src='/qr.png' className='w-full' />
         </div>
         <div className='mt-auto mb-auto'>
           <h4 className='font-semibold'>Hi👋 I am</h4>
-          <h1 className='text-5xl font-semibold mb-2'>kawamou</h1>
-          <div className='mb-4 text-gray-500'>
+          <h1 className='text-5xl font-extrabold mb-2'>kawamou</h1>
+          <div className='mb-8 text-gray-500'>
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
             <br />
             gonyogonyogonyogonyogonyogonyogonyogonyogonyogonyo
