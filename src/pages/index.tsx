@@ -21,7 +21,7 @@ const SideNav = () => {
 const Header = () => {
   return (
     <div className='navbar h-20 p-4'>
-      <div className='flex h-full max-w-3xl ml-auto mr-auto'>
+      <div className='flex h-full w-full ml-auto mr-auto'>
         <div className='flex-1 m-auto text-xl'>kawamou</div>
       </div>
     </div>
@@ -30,12 +30,12 @@ const Header = () => {
 
 const Top = () => {
   return (
-    <div className='max-w-3xl m-auto p-4'>
+    <div className='w-full m-auto'>
       <div className='flex justify-center'>
-        <div className='w-30 m-auto'>
-          <img src='/qr.png' className='w-full' />
+        <div className='w-2/5 m-auto'>
+          <img src='/qr.png' className='m-auto w-40' />
         </div>
-        <div className='mt-auto mb-auto'>
+        <div className='w-3/5 mt-auto mb-auto'>
           <h4 className='font-semibold'>Hi👋 I am</h4>
           <h1 className='text-5xl font-extrabold mb-2'>kawamou</h1>
           <div className='mb-8 text-gray-500'>
@@ -61,9 +61,9 @@ const Top = () => {
 
 const AboutMe = () => {
   return (
-    <div className='max-w-3xl m-auto  p-4'>
+    <div className='w-full m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>About</h2>
-      <div className='mb-8 text-center'>
+      <div className='mb-8'>
         私はこんな職業です。こんなことが好きです。
         それからこんな経験をしてきました。こんなことができます
         段落作って右側に作ることが好きですとかそういう感じのパーソナルなこと書いても良いかも
@@ -91,23 +91,24 @@ const AboutMe = () => {
 
 const Skills = () => {
   return (
-    <div className='max-w-3xl ml-auto mr-auto p-4'>
+    <div className='w-full ml-auto mr-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Skills</h2>
+      <div className='mb-8'>業務ではうんぬんかんぬん。プライベートではうんぬんかんぬん</div>
       <div className='flex gap-2 flex-wrap'>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Go</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Google Cloud</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Firebase</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#k8s</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Container</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Docker</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#TypeScript</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#React</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Node</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#AWS</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#SQL</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Python</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>#Flutter</div>
-        <div className='bg-gray-600 py-1 text-white pl-4 pr-4 text-center'>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Go</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Google Cloud</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Firebase</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#k8s</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Container</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Docker</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#TypeScript</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#React</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Node</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#AWS</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#SQL</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Python</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Flutter</div>
+        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>
           #Adobe (Photoshop, Illustrator...)
         </div>
       </div>
@@ -115,7 +116,7 @@ const Skills = () => {
   )
 }
 
-type Experience = {
+type Content = {
   title: string
   date: string
   description: string
@@ -127,7 +128,7 @@ type Experience = {
 // これが良さそう
 // all, 会社, 学問, その他で絞れると良さそう。ボタンがあって
 const Experiences = () => {
-  const [experiences] = useState<Experience[]>([
+  const [experiences] = useState<Content[]>([
     {
       title: '株式会社NTTドコモ',
       date: '2018.04 - 現在 | Software Engineer, 新規事業創出',
@@ -162,7 +163,7 @@ const Experiences = () => {
     },
   ])
   return (
-    <div className='max-w-3xl m-auto p-4'>
+    <div className='w-full m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Experiences</h2>
       <ol className='relative border-l border-gray-200'>
         {experiences?.map((experience, index) => {
@@ -196,17 +197,40 @@ const Experiences = () => {
 }
 
 const Appendix = () => {
+  const [contents] = useState<Content[]>([
+    {
+      title: 'ドコモ夏季インターン2022ハッカソンメンター',
+      date: '2020.09',
+      description: 'こんな感じのことやりましたよ',
+    },
+    {
+      title: 'ドコモ夏季インターン2022ハッカソンメンター',
+      date: '2020.09',
+      description: 'こんな感じのことやりましたよ',
+    },
+  ])
   return (
-    <div className='max-w-3xl m-auto'>
+    <div className='w-full m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Appendix</h2>
-      ここに保有資格、受賞、登壇歴、インターン等を書くか
+      {contents.map((content) => {
+        return (
+          <>
+            <ol>
+              <li>
+                <h3 className='text-xl'>content.title</h3>
+                <h4>content.date</h4>
+              </li>
+            </ol>
+          </>
+        )
+      })}
     </div>
   )
 }
 
 const Contact = () => {
   return (
-    <div className='max-w-3xl m-auto  p-4'>
+    <div className='w-full m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Contact</h2>
       <p className='text-center'>xxx@xxx.xxx</p>
     </div>
@@ -224,13 +248,10 @@ const Spacer = () => {
 // - 別ページにポートフォリオがあると良いかもしれない
 const Home: NextPage = () => {
   return (
-    <div className='flex'>
-      {/* <div className='w-1/5'>
-        <SideNav />
-      </div> */}
-      <div className='max-w-5xl m-auto w-4/5'>
+    <div className='flex font-sans'>
+      <div className='max-w-5xl m-auto bg-gray-50 p-8'>
         <div className='main'>
-          {/* <Header /> */}
+          <Header />
           <Spacer />
           <Top />
           <Spacer />
