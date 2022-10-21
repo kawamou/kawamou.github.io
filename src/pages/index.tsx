@@ -1,3 +1,7 @@
+// 同じものは同じものにするのがデザイン。ExperiencesとAppendix
+// スキルに技術ブログへの導線
+// https://nttdocomo-developers.jp/entry/2022/10/18/120000
+
 import type { NextPage } from 'next'
 import { useState, useCallback } from 'react'
 import { BriefcaseIcon } from '@heroicons/react/outline'
@@ -30,7 +34,7 @@ const Header = () => {
 
 const Top = () => {
   return (
-    <div className='w-full m-auto'>
+    <div className='w-4/5 mr-auto ml-auto'>
       <div className='flex justify-center'>
         <div className='w-2/5 m-auto'>
           <img src='/qr.png' className='m-auto w-40' />
@@ -49,7 +53,7 @@ const Top = () => {
             <button className='bg-gray-500 hover:bg-gray-700 text-white py-2 pr-4 pl-4 rounded-3xl'>
               Contact me
             </button>
-            <button className='bg-white hover:text-gray-300 border-2 border-gray-400 text-gray-500  pr-4 pl-4 rounded-3xl'>
+            <button className='bg-white hover:text-gray-300 border-gray-400 text-gray-500 py-2 pr-8 pl-8 rounded-3xl'>
               Works
             </button>
           </div>
@@ -61,7 +65,7 @@ const Top = () => {
 
 const AboutMe = () => {
   return (
-    <div className='w-full m-auto'>
+    <div className='w-4/5 m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>About</h2>
       <div className='mb-8'>
         私はこんな職業です。こんなことが好きです。
@@ -91,7 +95,7 @@ const AboutMe = () => {
 
 const Skills = () => {
   return (
-    <div className='w-full ml-auto mr-auto'>
+    <div className='w-4/5 ml-auto mr-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Skills</h2>
       <div className='mb-8'>業務ではうんぬんかんぬん。プライベートではうんぬんかんぬん</div>
       <div className='flex gap-2 flex-wrap'>
@@ -107,7 +111,6 @@ const Skills = () => {
         <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#AWS</div>
         <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#SQL</div>
         <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Python</div>
-        <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>#Flutter</div>
         <div className='bg-gray-500 py-1 text-white pl-4 pr-4 text-center'>
           #Adobe (Photoshop, Illustrator...)
         </div>
@@ -163,7 +166,7 @@ const Experiences = () => {
     },
   ])
   return (
-    <div className='w-full m-auto'>
+    <div className='w-4/5 m-auto'>
       <h2 className='text-3xl font-semibold text-center mb-8'>Experiences</h2>
       <ol className='relative border-l border-gray-200'>
         {experiences?.map((experience, index) => {
@@ -249,7 +252,7 @@ const Spacer = () => {
 const Home: NextPage = () => {
   return (
     <div className='flex font-sans'>
-      <div className='max-w-5xl m-auto bg-gray-50 p-8'>
+      <div className='max-w-6xl m-auto bg-gray-50 p-8'>
         <div className='main'>
           <Header />
           <Spacer />
