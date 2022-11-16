@@ -15,7 +15,7 @@ const SkillBox: FC<SkillBoxProps> = ({ skill }) => {
   )
 }
 
-export const Skills = () => {
+const Skills = () => {
   const [skills] = useState([
     'Go',
     'Google Cloud',
@@ -89,3 +89,5 @@ export const Skills = () => {
     </Card>
   )
 }
+
+export default Skills
