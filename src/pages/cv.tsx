@@ -3,8 +3,8 @@ import { Avatar, Card, Typography } from '@material-tailwind/react'
 import { Me } from '../components/Me'
 import { Header } from '../components/Header'
 import { Experiences } from '../components/Experiences'
-import { Others } from '../components/Others'
-import { Skills } from '../components/skills'
+import Others from '../components/Others'
+import Skills from '../components/Skills'
 
 const ContactMe = () => {
   return (
@@ -33,7 +33,7 @@ const ContactMe = () => {
   )
 }
 
-const CvPage: NextPage = () => {
+const Cv: NextPage = () => {
   return (
     <div className='background bg-gray-50 min-w-full min-h-screen'>
       <Header />
@@ -54,4 +54,4 @@ const CvPage: NextPage = () => {
   )
 }
 
-export default CvPage
+export default Cv
