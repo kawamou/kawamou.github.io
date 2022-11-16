@@ -10,11 +10,15 @@
     "serve": "npx serve out"
   },
   "dependencies": {
+    "@emoji-mart/data": "^1.0.8",
+    "@emoji-mart/react": "^1.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^1.0.6",
+    "@material-tailwind/react": "^1.2.4",
+    "emoji-mart": "^5.3.2",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -32,7 +36,6 @@
     "eslint-plugin-react": "^7.31.8",
     "postcss": "^8.4.17",
     "prettier": "^2.7.1",
-    "serve": "^14.0.1",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
   }
