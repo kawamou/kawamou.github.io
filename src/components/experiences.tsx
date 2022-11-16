@@ -16,7 +16,7 @@ const Experience: FC<{ key: number } & ExperienceProps> = ({
   contents,
 }) => {
   return (
-    <div className='flex border-b border-gray-200 my-4'>
+    <div className='flex mt-4'>
       <div className='flex gap-4'>
         <div>
           <div className='bg-gray-200 rounded-full w-9 h-9 flex items-center justify-center'>
@@ -124,7 +124,14 @@ export const Experiences = () => {
         </Select>
       </div>
       {experiences.map((experience, i) => {
-        return <Experience key={i} {...experience}></Experience>
+        return (
+          <div
+            key={i}
+            className={` ${i == experiences.length - 1 ? '' : 'border-b border-gray-200'}`}
+          >
+            <Experience key={i} {...experience}></Experience>
+          </div>
+        )
       })}
     </Card>
   )
