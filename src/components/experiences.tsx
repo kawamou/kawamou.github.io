@@ -8,8 +8,8 @@ type ExperienceProps = {
   contents: string[]
 }
 
-const Experience: FC<{ key: number } & ExperienceProps> = ({
-  key,
+const Experience: FC<{ index: number } & ExperienceProps> = ({
+  index,
   category,
   title,
   subTitle,
@@ -29,7 +29,7 @@ const Experience: FC<{ key: number } & ExperienceProps> = ({
               <Typography className='text-base font-bold mb-1 text-blue-gray-900'>
                 {title}
               </Typography>
-              {key == 0 ? (
+              {index == 0 ? (
                 <div className='bg-gray-200 rounded px-3 py-1 flex text-sm items-center justify-center mr-4 mb-1'>
                   <Typography className='text-xs'>Latest</Typography>
                 </div>
@@ -40,17 +40,20 @@ const Experience: FC<{ key: number } & ExperienceProps> = ({
             <Typography color='gray' className='text-sm mb-2'>
               {subTitle}
             </Typography>
-            <Typography className='text-sm mb-4'>
-              <ul
-                className={`${
-                  contents.length > 1 ? 'list-disc' : 'list-none'
-                } list-inside marker:text-blue-gray-900 text-blue-gray-900 leading-6`}
-              >
-                {contents.map((content, i) => {
-                  return <li key={i}>{content}</li>
-                })}
-              </ul>
-            </Typography>
+
+            <ul
+              className={`${
+                contents.length > 1 ? 'list-disc' : 'list-none'
+              } list-inside marker:text-blue-gray-900 text-blue-gray-900 leading-6 mb-4`}
+            >
+              {contents.map((content, i) => {
+                return (
+                  <li key={i}>
+                    <Typography className='text-sm inline'> {content}</Typography>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
         </div>
       </div>
@@ -129,7 +132,7 @@ export const Experiences = () => {
             key={i}
             className={` ${i == experiences.length - 1 ? '' : 'border-b border-gray-200'}`}
           >
-            <Experience key={i} {...experience}></Experience>
+            <Experience index={i} {...experience}></Experience>
           </div>
         )
       })}
