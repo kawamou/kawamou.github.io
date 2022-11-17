@@ -30,9 +30,7 @@ const Skills = () => {
   ])
   return (
     <Card className='shadow-sm p-6'>
-      <Typography variant='' className='text-xl font-bold text-blue-gray-900'>
-        Preffered Positons
-      </Typography>
+      <Typography className='text-xl font-bold text-blue-gray-900'>Preffered Positons</Typography>
       <ul className='list-disc p-4 border-b marker:text-blue-gray-900 border-gray-200'>
         <li className='pb-3'>
           <div className='max-w-sm rounded-xl border border-gray-200'>
@@ -73,9 +71,7 @@ const Skills = () => {
           </div>
         </li>
       </ul>
-      <Typography variant='' className='text-xl font-black my-4 text-blue-gray-900'>
-        Skills
-      </Typography>
+      <Typography className='text-xl font-black my-4 text-blue-gray-900'>Skills</Typography>
       <div>
         <Typography className='text-sm mb-6 text-blue-gray-900'>
           業務ではうんぬんかんぬん。プライベートではうんぬんかんぬん

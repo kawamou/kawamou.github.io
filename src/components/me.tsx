@@ -31,13 +31,13 @@ export const Me = () => {
         <Avatar src='/yellow.png' variant='circular' size='md'></Avatar>
         <div>
           <Typography className='text-xl font-bold text-blue-gray-900'>kawamou</Typography>
-          <Typography color='gray' variant='' className='text-sm'>
+          <Typography color='gray' className='text-sm'>
             新規事業 / Software developer
           </Typography>
         </div>
       </div>
       <div className='mb-2'>
-        <Typography variant='' className='text-sm text-blue-gray-900 leading-6'>
+        <Typography className='text-sm text-blue-gray-900 leading-6'>
           1992年9月生まれ。人間の表現に関することが好きです。現在は大手通信会社のR&D部門で新規事業創出に取り組んでいます
         </Typography>
       </div>
