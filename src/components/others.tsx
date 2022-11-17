@@ -36,10 +36,10 @@ const Other: FC<OtherProps> = ({ title, subTitle, hideDescription }) => {
       </button>
       <div
         className={`${
-          showDetail && hideDescription.length > 0 ? 'mt-4 h-6 opacity-100' : 'h-0 opacity-0'
+          showDetail && hideDescription.length > 0 ? 'mt-4 h-auto opacity-100' : 'h-0 opacity-0'
         } duration-300 overflow-hidden`}
       >
-        <a target='_blank' rel='noreferrer' href={`${hideDescription}`} className='inline-bloc'>
+        <a target='_blank' rel='noreferrer' href={`${hideDescription}`} className='inline-block'>
           <div className='flex items-center'>
             <Typography className='text-sm text-blue-gray-900 text-left mr-2 hover:border-b border-blue-gray-400'>
               {hideDescription}
