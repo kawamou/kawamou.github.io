@@ -38,14 +38,14 @@ const Cv: NextPage = () => {
     <div className='background bg-gray-50 min-w-full min-h-screen'>
       <Header />
       <div className='max-w-5xl mx-auto'>
-        <div className='flex gap-6 justify-center'>
-          <div className='flex flex-col gap-6 w-3/5'>
+        <div className='lg:flex gap-6 justify-center'>
+          <div className='flex flex-col gap-6 lg:w-3/5'>
             <Me />
             <Skills />
             <Experiences />
             <Others />
           </div>
-          <div className='flex flex-col w-2/5 gap-6'>
+          <div className='flex flex-col lg:w-2/5 gap-6'>
             <ContactMe />
           </div>
         </div>
