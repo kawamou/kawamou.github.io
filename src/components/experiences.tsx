@@ -92,8 +92,20 @@ export const Experiences = () => {
     {
       category: '👨‍💼',
       title: 'インターン 株式会社電通',
-      subTitle: '2016.03',
-      contents: ['テクノロジーとアイデアの学校1期生'],
+      subTitle: '2017.02',
+      contents: ['テクノロジーとアイデアの学校1期生', '最終課題ブロンズ賞'],
+    },
+    {
+      category: '👨‍💼',
+      title: 'インターン 株式会社日本総合研究所',
+      subTitle: '2017.02',
+      contents: ['IT戦略コース', '最優秀賞'],
+    },
+    {
+      category: '👨‍💼',
+      title: 'インターン Retty株式会社',
+      subTitle: '2016.09',
+      contents: ['チャットボットハッカソン2016'],
     },
     {
       category: '👨‍💻',
@@ -122,8 +134,8 @@ export const Experiences = () => {
       <Typography className='text-xl font-bold mb-4 text-blue-gray-900'>All Experiences</Typography>
       <div className='mb-5'>
         <Select label='カテゴリー' className=''>
-          <Option>会社</Option>
-          <Option>教育</Option>
+          <Option>Industry Experience</Option>
+          <Option>Education</Option>
         </Select>
       </div>
       {experiences.map((experience, i) => {
