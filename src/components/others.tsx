@@ -22,7 +22,7 @@ const Other: FC<OtherProps> = ({ title, subTitle, hideDescription }) => {
       >
         <div className='flex items-center'>
           <div>
-            <Typography className='text-sm mb-1 text-blue-gray-900'>{title}</Typography>
+            <Typography className='text-sm mb-1 text-blue-gray-900 text-left'>{title}</Typography>
             <Typography color='gray' className='text-sm text-left'>
               {subTitle}
             </Typography>
@@ -96,7 +96,18 @@ const Others = () => {
     },
     {
       title: '第80回情報処理学会全国大会, 学生奨励賞',
-      subTitle: '2016.03',
+      subTitle: '2018.03',
+      hideDescription: '',
+    },
+    {
+      title: '文部科学省 情報技術人材育成のための実践教育ネットワーク形成事業 enPiT BizApp修了',
+      subTitle: '2017.12',
+      hideDescription: '',
+    },
+    {
+      title:
+        '筑波大学国際産学連携本部「大学・研究機関発ベンチャー×経営ノウハウを持つ人材 Talent-Connect」',
+      subTitle: '2017.11',
       hideDescription: '',
     },
     {
