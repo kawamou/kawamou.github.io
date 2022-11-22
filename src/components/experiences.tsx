@@ -41,14 +41,17 @@ const Experience: FC<{ index: number } & ExperienceProps> = ({
               {subTitle}
             </Typography>
 
-            <ul
-              className={`${
-                contents.length > 1 ? 'list-disc' : 'list-none'
-              } list-inside marker:text-blue-gray-900 text-blue-gray-900 leading-6 mb-4`}
-            >
+            <ul className={`text-blue-gray-900 leading-6 mb-4`}>
               {contents.map((content, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    className={`${
+                      contents.length > 1
+                        ? 'before:content-["・"] before:left-0 before:absolute before:text-blue-gray-900 pl-4 relative'
+                        : ''
+                    }`}
+                  >
                     <Typography className='text-sm inline'> {content}</Typography>
                   </li>
                 )
@@ -66,17 +69,20 @@ export const Experiences = () => {
     {
       category: '👨‍💼',
       title: '株式会社NTTドコモ',
-      subTitle: '2020.03 - 現在 | Software developer, 新規事業創出',
-      contents: ['新規事業', 'ソフトウェアエンジニア'],
+      subTitle: '2020.03 - 現在 | Software Developer',
+      contents: [
+        'ドコモ初の B2C 完全内製アプリを開発・リリース。主にバックエンドエンジニアとして業務に従事',
+        'レイヤードアーキテクチャを意識した REST API の設計と実装、クラウドインフラ基盤や、SaaS とゼロトラストを組み合わせたカスタマーサポート基盤、BigQuery にデータを集約した分析基盤の設計と実装を担当',
+      ],
     },
     {
       category: '👨‍💼',
       title: '株式会社NTTドコモ',
       subTitle: '2018.04 - 2020.03',
       contents: [
-        '新卒入社後、R&Dの新規事業部門に配属',
-        'Twitterを始めとしたWebマーケ',
-        'PHP / AWSを',
+        '新卒入社後、R&D の新規事業部門に配属。PMF フェーズの B2C アプリ開発に参加し、SNS 広告を中心としたマーケ業務に従事。仮説構築から広告クリエイティブ作成と運用、効果測定を行い、ユーザ数 300% 超の成長を達成',
+        'バックエンドチーム（Laravel / AWS）入りし機能検討や開発業務に従事',
+        'サービス終了後はチームにてゼロからの新規事業検討を開始。リーンな考え方に基付き、ビジネスモデル構築や事業アイデアの検証等、0->1 フェーズを経験',
       ],
     },
     {
@@ -85,33 +91,33 @@ export const Experiences = () => {
       subTitle: '2016.04 - 2018.03 | コンピュータサイエンス専攻',
       contents: [
         'システム情報工学研究科コンピュータサイエンス専攻に所属',
-        '研究テーマはCuckoo Searchによる連続値最適化',
-        'ニューラルネットワークを対象としたNeuroEvolutionやブラックボックス最適化をメインに研究',
+        '研究テーマは Cuckoo Search による連続値最適化',
+        'ニューラルネットワークを対象とした NeuroEvolution やブラックボックス最適化をメインに研究',
       ],
     },
     {
       category: '👨‍💼',
       title: 'インターン 株式会社電通',
       subTitle: '2017.02',
-      contents: ['テクノロジーとアイデアの学校1期生', '最終課題ブロンズ賞'],
+      contents: ['テクノロジーとアイデアの学校1期生（最終課題ブロンズ賞）'],
     },
     {
       category: '👨‍💼',
       title: 'インターン 株式会社日本総合研究所',
       subTitle: '2017.02',
-      contents: ['IT戦略コース', '最優秀賞'],
+      contents: ['IT 戦略コース（最優秀賞）'],
     },
     {
       category: '👨‍💼',
-      title: 'インターン Retty株式会社',
+      title: 'インターン Retty 株式会社',
       subTitle: '2016.09',
-      contents: ['チャットボットハッカソン2016'],
+      contents: ['チャットボットハッカソン 2016'],
     },
     {
       category: '👨‍💻',
       title: 'アルバイト WWD JAPAN',
       subTitle: '2017 - 2018',
-      contents: ['ファッション週刊誌 / Web媒体のインターン及び学生アルバイト'],
+      contents: ['ファッション週刊誌 / Web 媒体のインターン及び学生アルバイト'],
     },
     {
       category: '👨‍💻',
@@ -124,8 +130,7 @@ export const Experiences = () => {
       title: '筑波大学',
       subTitle: '2012.04 - 2016.03 | 情報学群情報科学類',
       contents: [
-        '情報学群情報科学類に所属',
-        '卒論は進化計算を用いた対話型配色支援システムの開発と評価',
+        '情報学群情報科学類に所属。卒論は進化計算を用いた対話型配色支援システムの開発と評価',
       ],
     },
   ])
