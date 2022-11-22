@@ -49,7 +49,7 @@ export const Me = () => {
       </div>
       <div className='mb-2'>
         <Typography className='text-sm text-blue-gray-900 leading-6'>
-          携帯キャリアのR&D部門で新規事業開発に取り組んでいます。主にバックエンドの技術者としてお仕事をしています。人間の表現に関するコトが好きです
+          携帯キャリアのR&D部門で新規事業に取り組んでいます。開発者としてお仕事をしています。表現に関する事が好きです。
         </Typography>
       </div>
       <div className='flex text-gray-700 mb-4 hover:text-gray-300 hover:cursor-pointer'></div>
