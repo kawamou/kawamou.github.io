@@ -27,6 +27,9 @@ const Skills = () => {
     'SQL',
     'Python',
     '新規事業開発',
+    'Adjust',
+    'Google Analytics',
+    'BigQuery',
   ])
   return (
     <Card className='shadow-sm p-6'>
@@ -73,9 +76,9 @@ const Skills = () => {
       </ul> */}
       <Typography className='text-xl font-black text-blue-gray-900 mb-4'>Skills</Typography>
       <div>
-        <Typography className='text-sm mb-6 text-blue-gray-900'>
-          本番環境で使ったことがあるスキルとしてはGoやGoogle
-          Cloud、Firebase、AWS、コンテナが挙げられます。最近はプライベートでTypeScriptやReactを触っています
+        <Typography className='text-sm mb-6 text-blue-gray-900 leading-6'>
+          Go や Google Cloud、Firebase
+          を用いたバックエンドの開発ができます。新規事業経験を活かして、仮説をもとにしたアイデア出しと実行、実行結果のデータ分析といった一連のフローもできます。
         </Typography>
       </div>
       <div className='flex gap-2 flex-wrap'>
