@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Avatar, Card, Typography } from '@material-tailwind/react'
-import { Me } from '../components/Me'
 import { Header } from '../components/Header'
+import { Me } from '../components/Me'
 import { Experiences } from '../components/Experiences'
 import Others from '../components/Others'
 import Skills from '../components/Skills'
