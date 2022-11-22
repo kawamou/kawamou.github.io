@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import { Avatar, Card, Typography } from '@material-tailwind/react'
-import { Header } from '../components/Header'
-import { Me } from '../components/Me'
-import { Experiences } from '../components/Experiences'
-import Others from '../components/Others'
-import Skills from '../components/Skills'
+import { Header } from '../components/header'
+import { Me } from '../components/me'
+import { Experiences } from '../components/experiences'
+import Others from '../components/others'
+import Skills from '../components/skills'
 
 const ContactMe = () => {
   return (
