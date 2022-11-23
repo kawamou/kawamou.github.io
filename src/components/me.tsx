@@ -42,14 +42,14 @@ export const Me = () => {
         <Avatar src='/yellow.png' variant='circular' size='md'></Avatar>
         <div>
           <Typography className='text-xl font-bold text-blue-gray-900'>kawamou</Typography>
-          <Typography color='gray' className='text-sm'>
+          <Typography color='gray' className='text-xs'>
             デジタルプロダクト作り / Software Developer
           </Typography>
         </div>
       </div>
       <div className='mb-2'>
         <Typography className='text-sm text-blue-gray-900 leading-6'>
-          携帯キャリアのR&D部門で新規事業に取り組んでいます。開発者としてお仕事をしています。表現に関する事が好きです。
+          携帯キャリアのR&D部門に所属。新規事業に開発者として携わっています。表現に関する事が好きです。
         </Typography>
       </div>
       <div className='flex text-gray-700 mb-4 hover:text-gray-300 hover:cursor-pointer'></div>
