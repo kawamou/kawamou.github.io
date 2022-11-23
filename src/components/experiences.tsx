@@ -22,7 +22,7 @@ const Experience: FC<{ index: number } & ExperienceProps> = ({
       <div className='flex gap-4'>
         <div>
           <div className='bg-gray-200 rounded-full w-9 h-9 flex items-center justify-center'>
-            <Typography className='text-lg'>{category}</Typography>
+            <Typography className='text-base'>{category}</Typography>
           </div>
         </div>
         <div>
@@ -39,7 +39,7 @@ const Experience: FC<{ index: number } & ExperienceProps> = ({
                 <></>
               )}
             </div>
-            <Typography color='gray' className='text-sm mb-2'>
+            <Typography color='gray' className='text-xs mb-2'>
               {subTitle}
             </Typography>
 
