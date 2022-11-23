@@ -78,7 +78,7 @@ const Skills = () => {
       <div>
         <Typography className='text-sm mb-6 text-blue-gray-900 leading-6'>
           Go や Google Cloud、Firebase
-          を用いたバックエンドの開発ができます。新規事業経験を活かして、仮説をもとにしたアイデア出しと実行、実行結果のデータ分析といった一連のフローもできます。
+          を中心にバックエンドの設計と開発ができます。また新規事業経験を活かし、いわゆるスタートアップフィットジャーニーの各過程への貢献ができます。
         </Typography>
       </div>
       <div className='flex gap-2 flex-wrap'>
