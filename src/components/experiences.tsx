@@ -138,7 +138,7 @@ export const Experiences = () => {
   const [selection, setSelection] = useState<Category>('🦄')
   return (
     <Card className='p-6 shadow-sm'>
-      <Typography className='text-xl font-bold mb-4 text-blue-gray-900'>All Experiences</Typography>
+      <Typography className='text-xl font-bold mb-4 text-blue-gray-900'>Experiences</Typography>
       <div className='mb-5'>
         <Select
           value={selection}
