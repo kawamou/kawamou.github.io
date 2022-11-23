@@ -14,13 +14,13 @@ const ContactMe = () => {
         <ul className='list-none text-blue-gray-900 leading-6 text-sm'>
           <li>
             kazusada.kawamo.nt[at]gmail.com
-            <Typography color='gray' className='text-sm mb-2 '>
+            <Typography color='gray' className='text-xs mb-2 '>
               Email
             </Typography>
           </li>
           <li>
             3kwm
-            <Typography color='gray' className='text-sm mb-2 '>
+            <Typography color='gray' className='text-xs mb-2 '>
               Twitter DM
             </Typography>
           </li>
