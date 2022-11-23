@@ -7,10 +7,11 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 type OtherProps = {
   title: string
   subTitle: string
-  hideDescription: string
+  description: string
+  link: string
 }
 
-const Other: FC<OtherProps> = ({ title, subTitle, hideDescription }) => {
+const Other: FC<OtherProps> = ({ title, subTitle, description, link }) => {
   const [showDetail, setShowDetail] = useState(false)
   return (
     <div className='px-6 py-3 hover:bg-gray-50'>
@@ -23,7 +24,7 @@ const Other: FC<OtherProps> = ({ title, subTitle, hideDescription }) => {
         <div className='flex items-center'>
           <div>
             <Typography className='text-sm mb-1 text-blue-gray-900 text-left'>{title}</Typography>
-            <Typography color='gray' className='text-sm text-left'>
+            <Typography color='gray' className='text-xs text-left'>
               {subTitle}
             </Typography>
           </div>
@@ -36,17 +37,28 @@ const Other: FC<OtherProps> = ({ title, subTitle, hideDescription }) => {
       </button>
       <div
         className={`${
-          showDetail && hideDescription.length > 0 ? 'mt-4 h-auto opacity-100' : 'h-0 opacity-0'
-        } duration-300 overflow-hidden`}
+          showDetail ? 'mt-4 h-auto opacity-100' : 'h-0 opacity-0'
+        } duration-200 overflow-hidden`}
       >
-        <a target='_blank' rel='noreferrer' href={`${hideDescription}`} className='inline-block'>
-          <div className='flex items-center'>
-            <Typography className='text-sm text-blue-gray-900 text-left mr-2 hover:border-b border-blue-gray-400'>
-              {hideDescription}
-            </Typography>
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={'h-2'} />
-          </div>
-        </a>
+        {description.length > 0 ? (
+          <Typography className='text-sm text-blue-gray-900 text-left mr-2'>
+            {description}
+          </Typography>
+        ) : (
+          <></>
+        )}
+        {link.length > 0 ? (
+          <a target='_blank' rel='noreferrer' href={`${link}`} className='inline-block'>
+            <div className='flex items-center'>
+              <Typography className='text-sm text-blue-gray-900 text-left mr-2 hover:border-b border-blue-gray-400'>
+                {link}
+              </Typography>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={'h-2'} />
+            </div>
+          </a>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   )
@@ -57,63 +69,75 @@ const Others = () => {
     {
       title: 'ドコモ夏季インターン2022 ハッカソンメンター',
       subTitle: '2022.09',
-      hideDescription: '',
+      description: '担当: Eチーム（Android / Java / 自然言語処理）',
+      link: 'https://nttdocomo-developers.jp/entry/2022/10/18/120000',
     },
     {
-      title: 'NTT Com Tech Night#2登壇',
+      title: '登壇 - NTT Com Tech Night#2',
       subTitle: '2022.08',
-      hideDescription: '',
+      description: 'Google の技術まとめ',
+      link: '',
     },
     {
       title: 'ドコモ夏季インターン2021 ハッカソンメンター',
       subTitle: '2021.09',
-      hideDescription: 'https://nttdocomo-developers.jp/entry/2022/10/18/120000',
+      description: '担当: Dチーム（Unity / TensorFlow / FastAPI / WebSocket）',
+      link: '',
     },
     {
-      title: 'OPEN DX 2021登壇',
+      title: '登壇 - OPEN DX 2021',
       subTitle: '2021.09',
-      hideDescription: '',
+      description: '日系エンプラ企業で社員内製開発にトライしてみた',
+      link: 'https://cloud-ace.jp/opendx2021/',
     },
     {
-      title: "Google Cloud Day: Digital '21登壇",
+      title: "登壇 - Google Cloud Day: Digital '21",
       subTitle: '2021.06',
-      hideDescription: '',
+      description: 'Google 流！どこでも安全に働けるクラウドワーカーのセキュリティ最前線',
+      link: 'https://cloudonair.withgoogle.com/events/google-cloud-day-digital-21/speakers',
     },
     {
-      title: 'Google Cloud Professional Cloud Architect',
+      title: '資格 - Google Cloud Professional Cloud Architect',
       subTitle: '2021.03',
-      hideDescription: '',
+      description: '',
+      link: 'https://cloud.google.com/certification/cloud-architect?hl=ja',
     },
     {
-      title: 'AWS Certified Solutions Architect – Associate',
+      title: '資格 - AWS Certified Solutions Architect – Associate',
       subTitle: '2020.02',
-      hideDescription: '',
+      description: '',
+      link: 'https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/',
     },
     {
-      title: '証券外務員1種',
+      title: '資格 - 証券外務員1種',
       subTitle: '2019.03',
-      hideDescription: '',
+      description: 'FinTech ドメイン知識のために取得',
+      link: 'https://www.jsda.or.jp/gaimuin/shiken.html',
     },
     {
       title: '第80回情報処理学会全国大会, 学生奨励賞',
       subTitle: '2018.03',
-      hideDescription: '',
+      description: '複数の群れを有する並列 Cuckoo Search による連続値最適化',
+      link: 'https://www.ipsj.or.jp/award/taikaigakusei.html',
     },
     {
       title: '文部科学省 情報技術人材育成のための実践教育ネットワーク形成事業 enPiT BizApp修了',
       subTitle: '2017.12',
-      hideDescription: '',
+      description: '',
+      link: 'https://www.cs.tsukuba.ac.jp/enPiT-old/',
     },
     {
       title:
         '筑波大学国際産学連携本部「大学・研究機関発ベンチャー×経営ノウハウを持つ人材 Talent-Connect」',
       subTitle: '2017.11',
-      hideDescription: '',
+      description: '',
+      link: 'https://www.sanrenhonbu.tsukuba.ac.jp/talentconnect/',
     },
     {
       title: 'Mashup Awards 2016 エーアイ賞',
       subTitle: '2016.03',
-      hideDescription: '',
+      description: '傘の盗難防止システム「れいんちゃん」',
+      link: '',
     },
   ])
   return (
