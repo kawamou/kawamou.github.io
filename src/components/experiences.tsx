@@ -135,16 +135,39 @@ export const Experiences = () => {
       ],
     },
   ])
+  const [selection, setSelection] = useState<Category>('🦄')
   return (
     <Card className='p-6 shadow-sm'>
       <Typography className='text-xl font-bold mb-4 text-blue-gray-900'>All Experiences</Typography>
       <div className='mb-5'>
-        <Select label='カテゴリー' className=''>
-          <Option>Industry Experience</Option>
-          <Option>Education</Option>
+        <Select
+          value={selection}
+          onChange={(value) => {
+            setSelection(value as Category)
+          }}
+          variant='standard'
+          size='md'
+          color='gray'
+          label='category'
+          className='text-sm'
+        >
+          <Option value='🦄' className='text-sm'>
+            🦄 All
+          </Option>
+          <Option value='👨‍💼' className='text-sm'>
+            👨‍💼 Industry Experience
+          </Option>
+          <Option value='🎓' className='text-sm'>
+            🎓 Education
+          </Option>
+          <Option value='👨‍💻' className='text-sm'>
+            👨‍💻 Others
+          </Option>
         </Select>
       </div>
       {experiences.map((experience, i) => {
+        if (selection === '🦄') {
+        } else if (experience.category !== selection) return
         return (
           <div
             key={i}
