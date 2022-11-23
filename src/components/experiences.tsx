@@ -1,8 +1,10 @@
 import { Card, Select, Typography, Option } from '@material-tailwind/react'
 import { FC, useState } from 'react'
 
+type Category = '🦄' | '👨‍💼' | '🎓' | '👨‍💻'
+
 type ExperienceProps = {
-  category: '👨‍💼' | '🎓' | '👨‍💻'
+  category: Category
   title: string
   subTitle: string
   contents: string[]
