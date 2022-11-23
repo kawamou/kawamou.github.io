@@ -143,7 +143,7 @@ export const Experiences = () => {
         <Select
           value={selection}
           onChange={(value) => {
-            setSelection(value as Category)
+            setSelection(value as Category) // 型定義が違っている ref. https://github.com/creativetimofficial/material-tailwind/issues/116
           }}
           variant='standard'
           size='md'
