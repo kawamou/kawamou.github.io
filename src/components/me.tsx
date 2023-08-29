@@ -43,14 +43,14 @@ export const Me = () => {
         <div>
           <Typography className='text-xl font-bold text-blue-gray-900'>kawamou</Typography>
           <Typography color='gray' className='text-xs'>
-            デジタルプロダクト作り / Software Developer
+            デジタルプロダクト作り / (Software|R&D) Engineer
           </Typography>
         </div>
       </div>
       <div className='mb-2'>
         <Typography className='text-sm text-blue-gray-900 leading-6'>
-          通信系企業の R&D
-          部門に所属。新規事業や先端技術の社会実装に開発者として携わっています。表現に関する事が好きです。
+          通信会社の R&D
+          部門に所属。プロダクト開発や先端技術の社会実装に開発者として従事。表現に関する事が好き。
         </Typography>
       </div>
       <div className='flex text-gray-700 mb-4 hover:text-gray-300 hover:cursor-pointer'></div>
