@@ -67,6 +67,12 @@ const Other: FC<OtherProps> = ({ title, subTitle, description, link }) => {
 const Others = () => {
   const [others] = useState<OtherProps[]>([
     {
+      title: 'ドコモ夏季インターン2023 技術サポーター',
+      subTitle: '2023.09',
+      description: '工事中',
+      link: '工事中',
+    },
+    {
       title: 'ドコモ夏季インターン2022 ハッカソンメンター',
       subTitle: '2022.09',
       description: '担当: Eチーム（Android / Java / 自然言語処理）',
