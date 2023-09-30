@@ -69,8 +69,8 @@ const Others = () => {
     {
       title: 'ドコモ夏季インターン2023 技術サポーター',
       subTitle: '2023.09',
-      description: '工事中',
-      link: '工事中',
+      description: '担当: チーム全体への技術サポート',
+      link: 'https://nttdocomo-developers.jp/',
     },
     {
       title: 'ドコモ夏季インターン2022 ハッカソンメンター',
